@@ -52,6 +52,6 @@ GROUP BY A.izena;
 
 
 /*Film genero bakoitzeko, estadistikak. */
-SELECT generoa, COUNT(*), AVG(iraupena)
+SELECT generoa, COUNT(*)AS kantitatea, AVG(iraupena) as Iraupena
 FROM filma
 GROUP BY generoa;
